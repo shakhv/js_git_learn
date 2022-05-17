@@ -1,0 +1,46 @@
+body {
+    padding: 100px 30px 30px 30px ;
+}
+#block {
+    color: green;
+}
+a[href^='https://'] {
+    color: red;
+}
+.holder li:nth-child(4) {
+    background-color: green;
+}
+.holder p:nth-child(3) {
+    font-size: 26px;
+}
+.text-box h3:nth-child(1){
+    color: pink;
+}
+#greycol {
+    color: grey;
+}
+p:nth-child(7) {
+    color: green;
+}
+.text-box div p:last-child {
+    color: red;
+}
+.yellow {
+    color: yellow;
+}
+.bg-box {
+        height: 800px;
+        /* background-color: green !important; */
+        background:url('images/grass.png') 100% 100%/200px repeat-x, url('images/lamp-png-0.png') top left/70px repeat-x, url('images/house.jpeg') 50% no-repeat, url('images/ej.png')top left/70px repeat-y,  url('images/bublik.png') bottom right/100px repeat-y , green;
+}
+
+
+
+
+
+
+
+
+
+
+

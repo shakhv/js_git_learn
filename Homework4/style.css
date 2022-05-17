@@ -1,0 +1,193 @@
+/*First Task CSS*/
+.card-holder {
+    background: green;
+    color: white;
+    font-size: 25px;
+    padding: 30px;
+}
+.card-holder blockquote {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.card-holder blockquote p {
+    margin-bottom: 10px;
+}
+.cards {
+    padding-top: 60px;
+}
+.cards img {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: auto;
+    transform: rotate(-15deg);
+    border-radius: 10px;
+    transition: top 0.4s linear;
+}
+.cards img:nth-child(2) {
+    margin: 0 -60px;
+    transform: rotate(-10deg) translateY(-10px);
+}
+.cards img:nth-child(3) {
+    margin: 0 -70px;
+    transform: rotate(10deg) translateY(10px) translateX(25px);
+}
+.cards img:hover {
+    top: -20px;
+}
+/*Second task CSS*/
+.level-one{
+    height: 300px;
+    padding-left: 50px;
+}
+.level-one .box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.level-one .box:nth-child(1) {
+    background-color: aqua;
+    left: 10px;
+    top: 20px;
+    z-index: -10;
+}
+.level-one .box:nth-child(2) {
+    background: yellow;
+    left: -40px;
+    top: 70px;
+    z-index: -5;
+}
+.level-one .box:nth-child(3) {
+    background: blue;
+    left: -90px;
+    top: 110px;
+    z-index: -10;
+}
+/*Main menu content*/
+/* .wrapper {
+    position: relative;
+    overflow: hidden;
+} */
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height:  100vh;
+    align-items: center;
+    background: gray;
+    transition: 1s;
+    transform: translateX(-90%);
+    z-index: 1000;
+}
+.menu-here {
+    position: relative;
+    display: inline-block;
+    color: white;
+    top: 400px;
+    left: 345px;
+   
+    z-index: 10;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.menu:hover {
+    transform: translateX(-10%);
+    z-index: 1000;
+}
+.menu:hover .menu-here {
+    z-index: -10;
+    color: gray;
+    transition: 0.5s linear;
+}
+.menu-list {
+    position: fixed;
+    height: 100%;
+    margin-top: 0px;
+    flex-direction: column;
+    margin-left: 10rem;
+    margin-top: 8.7rem;
+}
+.menu-list a {
+    display: inline-block;
+    padding-top: 40px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.menu-list a:hover {
+    color: orange;
+}
+.romb::before {
+    content: '';
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    margin-top: 40px;
+    left: 130px;
+    background-color: yellow;
+    transform: rotate(-46deg);
+    border: solid thin black;
+}
+.square1 {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    margin-left: 550px;
+    margin-top: 450px;
+    animation: move-square1  5s linear 0s infinite alternate both;
+    animation-direction: normal;
+    animation-delay: 0ms;
+}
+@keyframes move-square1 {
+    0%{
+        top: 0px;
+        left: 0px;
+        background-color: red;
+    }
+    12.5% {
+        top: 250px;
+        left: 0px;
+        background-color: purple;
+    }
+    25% {
+        top: 250px;
+        left: 0px;
+        background-color: blue;
+    }
+    37% {
+        top: 250px;
+        left: 250px;
+        background-color: rgb(23, 41, 23);
+    }
+    50% {
+        top: 250px;
+        left: 250px;
+        background-color: green;
+    }
+    62.5% {
+        top: 0px;
+        left: 250px;
+        background-color: chocolate;
+    }
+    75% {
+        top: 0px;
+        left:   250px;
+        background-color: yellow;
+    }
+    87.5% {
+        top: 0px;
+        left: 0px;
+        background-color: orangered;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        background-color: red;
+    }
+}
